@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+            },
+            fontFamily:{
+                title: ['Sriracha','serif'],
+                content: ['Itim','sans-serif'],
+            },
+          },
+        },
+    };</script>
 </head>
 <body>
     <nav>
@@ -13,15 +29,17 @@
         </div>
     
         <div class="menu">
-            <a href="index.html">หน้าแรก</a>
-            <a href="product.html">สินค้า</a>
-            <a href="contact.html">ช่องติดต่อทางร้าน</a>
+            <a class="font-content" href="index.html">หน้าแรก</a>
+            <a class="font-content" href="product.html">สินค้า</a>
+            <a class="font-content" href="contact.html">ช่องติดต่อทางร้าน</a>
         </div>
     </nav>
         <main id="content">
             <img src="imges/logo.png" alt="logo" width="20%">
-            <h1>Welcome to Flower Shop</h1>
-            <a href="product.html"><button>คลิกเพื่อดูสินค้า</button></a>
+            <h1 class="text-5xl text-rose-300 text-center font-content">Welcome to Flower Shop</h1>
+        <a href="product.html">
+            <button class="bg-rose-400 border-2 text-center font-content hover:bg-rose-200 shadow-xl shadow-rose-500/50">คลิกเพื่อดูสินค้า</button>
+        </a>
         </main>
     
         <footer>

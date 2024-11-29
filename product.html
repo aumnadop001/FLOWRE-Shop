@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+            },
+            fontFamily:{
+                title: ['Sriracha','serif'],
+                content: ['Itim','sans-serif'],
+            },
+          },
+        },
+    };</script>
 </head>
 <body>
     <nav>
@@ -13,23 +29,23 @@
         </div>
     
         <div class="menu">
-            <a href="index.html">หน้าแรก</a>
-            <a href="product.html">สินค้า</a>
-            <a href="contact.html">ช่องติดต่อทางร้าน</a>
+            <a class="font-content" href="index.html">หน้าแรก</a>
+            <a class="font-content" href="product.html">สินค้า</a>
+            <a class="font-content" href="contact.html">ช่องติดต่อทางร้าน</a>
         </div>
     </nav>
         <main id="product">
         <div class="product">
-            <img src="imges/product1.jpg" alt="" width="220" height="225">
-                <div class="desc"><strong>Setที่1 299บาท</strong></div>
+            <img class="border-2 border-black" src="imges/product1.jpg" alt="" width="220" height="225">
+                <div class="desc text-red-500 font-content font-content font-bold hover:text-red-300"><strong>Setที่1 299บาท</strong></div>
         </div>    
         <div class="product">
-            <img src="imges/product2.jpg" alt="" width="220" height="225">
-                <div class="desc"><strong>Setที่2 399บาท</strong></div>
+            <img class="border-2 border-black" src="imges/product2.jpg" alt="" width="220" height="225">
+                <div class="desc text-red-500 font-content font-content font-bold hover:text-red-300"><strong>Setที่2 399บาท</strong></div>
         </div>
         <div class="product">
-            <img src="imges/product3.jpg" alt="" width="220" height="225">
-                <div class="desc"><strong>Setที่3 499บาท</strong></div>
+            <img class="border-2 border-black" src="imges/product3.jpg" alt="" width="220" height="225">
+                <div class="desc text-red-500 font-content font-content font-bold hover:text-red-300"><strong>Setที่3 499บาท</strong></div>
         </div>
         </main>
     

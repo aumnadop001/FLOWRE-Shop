@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+            },
+            fontFamily:{
+                title: ['Sriracha','serif'],
+                content: ['Itim','sans-serif'],
+            },
+          },
+        },
+    };</script>
 </head>
 <body>
     <nav>
-        <div class="logo"> 
+        <div class="logo shadow-xl"> 
             <img src="imges/logo.png" alt="logo" width="65">
         </div>
     
         <div class="menu">
-            <a href="index.html">หน้าแรก</a>
-            <a href="product.html">สินค้า</a>
-            <a href="contact.html">ช่องติดต่อทางร้าน</a>
+            <a class="font-content" href="index.html">หน้าแรก</a>
+            <a class="font-content" href="product.html">สินค้า</a>
+            <a class="font-content" href="contact.html">ช่องติดต่อทางร้าน</a>
         </div>
     </nav>
         <main id="contact">
             <img src="imges/logo.png" alt="logo" width="20%">
         <div class="contact">
-            <h1><strong>ช่องทางติดต่อร้านFlower Shop</strong></h1>
-        <ul>
-            <li><h2><strong>ที่อยู่ xx/xx อ.เมือง จ.นครปฐม 73000</h2></strong></li>
-            <li><h2><strong>contact 065-666-9955</h2></strong></li>
-        </ul>
+            <div class="px-8 py-4 border-4 rounded-full border-emerald-300 text-center shadow-xl shadow-emerald-500/50">
+            <h1 class="text-xl font-title font-bold text-rose-500">ช่องทางติดต่อร้านFlower Shop</h1>
+            <h2 class="text-xl font-title font-bold text-rose-500">ที่อยู่ xx/xx อ.เมือง จ.นครปฐม 73000</h2>
+            <h2 class="text-xl font-title font-bold text-rose-500">contact 065-666-9955</h2>
+            </div>
     </div>
         </main>
     
